@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script>
+$(function(){
+	$('.box').fullpage({
+		navigation:true,
+		navigationPosition:"right"
+	});
+	section=$(".section")
+	section.removeClass("active")
+	window.scroll=function(){
+		for (var i = 0; i < section.length; i++) {
+			section[i].addClass("active")
+		};
+		
+	}
+	
+});
+</script>
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+			<a href="" class="logo"></a>
+			<div class="nav-left">
+				<ul class="">
+					<li class="">
+						<a href="">首页</a>
+					</li>
+					<li class="">
+						<a href="">产品介绍</a>
+					</li>
+					<li class="">
+						<a href="">用户版</a>
+					</li>
+				</ul>
+			</div>
+			<div class="nav-right">
+				<!-- <a href="">登录</a> -->
+				<a href="">手机客户端<i></i></a>
+				<a href="">百度司南</a>
+				<a href="">联系我们</a>
+				<a href="" >申请试用</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<!--  -->
+	<div class="box">
+		<div class="section">
+			<div class="cloud1"></div>
+			<div class="cloud2"></div>
+			<div class="cloud3"></div>
+			<div class="inner">
+				<div class="left">
+					<img src="img/launch.png" alt="">
+				</div>
+				<div class="right">
+					<div class="right-box">
+						<input type="text">
+						<input type="text">
+						<input type="text">
+						<input type="submit" class="btn" value="登录">
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="hill"></div>
+				<div class="hill1"></div>
+				<div class="hill2"></div>
+				<div class="ship"></div>
+			</div>
+			
+		</div>
+		<div class="section">
+			<div class="inner">
+				<div class="left">
+				<img src="img/lingxian.png" alt="">
+				<h4>数据收集与处理</h4>
+				<p>15年专业数据收集与语义分析技术积累<br>卓越极致，不断攀登</p>
+				</div>
+				<div class="right">
+					<img src="img/brain.png" alt="">
+				</div>
+				
+			</div>
+			<div class="juxing1"></div>
+			<div class="juxing2"></div>
+			<div class="juxing3"></div>
+			<div class="juxing4"></div>
+			<div class="juxing5"></div>
+		</div>
+		<div class="section">
+			<div class="inner">
+				<div class="left">
+				<img src="img/quanmian.png" alt="">
+				<h4>舆情分析逻辑与架构</h4>
+				<p>声量诊断、传播分析、情感提炼、受众画像<br>有方法论，更有智慧</p>
+				</div>
+				<div class="right">
+					<img src="img/allside.png" alt="">
+				</div>
+				
+			</div>
+
+			<div class="yuan1"></div>
+			<div class="yuan2"></div>
+			<div class="yuan3"></div>
+			<div class="yuan4"></div>
+			<div class="yuan5"></div>
+			<div class="yuan6"></div>
+			<div class="yuan7"></div>
+			<div class="yuan8"></div>
+			<div class="yuan9"></div>
+		</div>
+		<div class="section">
+			<div class="inner">
+				<div class="quan2"></div>
+				<div class="quan1"></div>
+				<div class="quan3"></div>
+				<div class="left">
+					<img src="img/zhuanye.png" alt="">
+					<h4>专业数据可视化</h4>
+					<p>非凡的数据洞悉和可视化能力<br>精研数据，惊艳所见</p>
+				</div>
+				<div class="right">
+					<img src="img/stat.png" alt="">
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
